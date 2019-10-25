@@ -1,0 +1,6 @@
+*****forEach: With forEach we can do a whole bunch of side effects within a function: console, create a new array, push to
+that array, return undefined
+
+
+
+****map: no side effects, pure function, making a new copy of the array
