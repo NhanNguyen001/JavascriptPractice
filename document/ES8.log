@@ -1,0 +1,32 @@
+// .padStart() and .padEnd()
+'Turtle'.padStart(10);
+'Turtle'.padEnd(10)
+
+
+// Trailing commas in functions parameters lists and calls
+const fun = (a, b, c, d, ) => {
+	console.log(a);
+}
+fun(1, 2, 3, 4, )
+
+
+
+// Object.values and Object.entries
+let obj = {
+	username0: 'Santa',
+	username1: 'Rudolf',
+	username2: 'Mr.Grinch'
+}
+
+Object.keys(obj).forEach((key, index) => {
+	console.log(key, obj[key])
+})
+
+Object.values(obj).forEach(value => {
+	console.log(value);
+})
+
+
+Object.entries(obj).forEach(entrie => {
+	console.log(entrie)
+})
