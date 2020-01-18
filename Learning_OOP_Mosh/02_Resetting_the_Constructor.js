@@ -10,8 +10,11 @@ function Circle(radius) {
   this.radius = radius;
 }
 
-//Circle.prototype = Object.create(Object.prototype); // objectBase
-// Circle.prototype = Object.create(Shape.prototype);
+// Circle.prototype = Object.create(Object.prototype); // objectBase
+// Circle.prototype.constructor = Circle;
+// new Circle.prototype.constructor(1) ==> new Circle(1)
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.constructor = Circle;
 
 Circle.prototype.draw = function() {
   console.log('draw');
