@@ -4,7 +4,7 @@ function Shape(color) {
 }
 
 Shape.prototype.duplicate = function() {
-  console.log('duplicate');
+  console.log("duplicate");
 };
 
 // We have encapsulated this logic somewhere that we can use
@@ -24,13 +24,13 @@ const c1 = new Circle();
 Circle.prototype.duplicate = function() {
   Shape.prototype.duplicate.call(this);
 
-  console.log('duplicate circle');
+  console.log("duplicate circle");
 };
 
 const c2 = new Circle();
 
 Circle.prototype.draw = function() {
-  console.log('draw');
+  console.log("draw");
 };
 
 function Square(size) {
@@ -40,7 +40,11 @@ function Square(size) {
 extend(Square, Shape);
 
 Square.prototype.duplicate = function() {
+<<<<<<< HEAD
   console.log('duplicate square');
+=======
+  console.log("duplicate square");
+>>>>>>> f4f2e0bc11d8e28d031710f93773a0fd19dfa4d9
 };
 
 const shapes = [new Circle(), new Square()];
