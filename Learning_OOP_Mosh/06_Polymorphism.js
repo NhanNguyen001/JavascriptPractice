@@ -20,12 +20,14 @@ function Circle(radius, color) {
 }
 
 extend(Circle, Shape);
-
+const c1 = new Circle();
 Circle.prototype.duplicate = function() {
   Shape.prototype.duplicate.call(this);
 
   console.log('duplicate circle');
 };
+
+const c2 = new Circle();
 
 Circle.prototype.draw = function() {
   console.log('draw');
@@ -35,9 +37,22 @@ function Square(size) {
   this.size = size;
 }
 
-// Intermediate function inheritance
 extend(Square, Shape);
 
-const sq = new Square(12);
-const s = new Shape();
-const c = new Circle(1, 'red');
+Square.prototype.duplicate = function() {
+  console.log('duplicate square');
+};
+
+const shapes = [new Circle(), new Square()];
+
+for (let shape of shapes) {
+  // shape.duplicate();
+  // if (shape.type === "circle") {
+  //   duplicateCircle();
+  // } else if (shape.type === "square") {
+  //   duplicateSquare();
+  // } else {
+  //   duplicateShape();
+  // }
+  shape.duplicate();
+}
