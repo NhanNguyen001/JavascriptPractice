@@ -17,6 +17,11 @@ class Circle extends Shape {
   draw() {
     console.log('draw');
   }
+
+  test() {
+    this.draw();
+  }
 }
 
 const c = new Circle('red', 1);
+c.test();
