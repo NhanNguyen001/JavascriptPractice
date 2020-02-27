@@ -11,9 +11,12 @@ class Circle {
     this.radius = radius;
   }
 
+  static test = 2;
+
   draw() {
+    console.log(Circle.test);
     console.log('draw');
   }
 }
 
-const c = new Circle(1);
+const circle = new Circle(1);
