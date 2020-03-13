@@ -1,0 +1,12 @@
+Document Object Model or the DOM, it's is the heart of any kind of web page manipulation.
+
+It's created by the browser when an HTML document loads inside it.
+
+Once the HTML document is loaded in the browser the browser creates an object which models this document
+and this object is called the Document Object.
+
+Programmatically the document over here is modelled by this document object created by the browser and inside
+Javascript code when we start to code we have access to that document object and we can use it to interact
+with the HTML pages using those different property and methods.
+
+DOM also describes how a document looks in a visual way too.
