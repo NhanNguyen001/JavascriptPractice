@@ -1,17 +1,20 @@
-body{
+body {
     font-family: arial;
     color: #333;
 }
-h1{
+
+h1 {
     font-weight: normal;
     margin: 20px auto;
     text-align: center;
 }
-form{
+
+form {
     width: 500px;
     margin: 20px auto;
 }
-input{
+
+input {
     display: block;
     padding: 8px 16px;
     font-size: 2em;
