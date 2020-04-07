@@ -15,12 +15,12 @@ const draw = c.draw;
 // Function Call
 draw();
 
-class Circle {
-  draw() {
-    console.log(this);
-  }
-}
+// class Circle {
+//   draw() {
+//     console.log(this);
+//   }
+// }
 
-const c = new Circle();
-const draw = c.draw();
-draw();
+// const c = new Circle();
+// const draw = c.draw();
+// draw();

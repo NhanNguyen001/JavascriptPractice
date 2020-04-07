@@ -1,0 +1,16 @@
+A commit is basically just like a save point it's a snapshot in time of your code
+at that particular point.
+
+
+"git log --oneline"
+
+Git Checkout
+"git checkout ce68903" then back to master use command 
+"git checkout master"
+
+
+Git Revert: undo one particular commit
+"git revert ce68903"
+
+
+Git Revert: undo one particular commit

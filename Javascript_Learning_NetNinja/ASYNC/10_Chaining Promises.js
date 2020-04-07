@@ -2,31 +2,33 @@ const getTodos = resource => {
   return new Promise((resolve, reject) => {
     const request = new XMLHttpRequest();
 
-    request.addEventListener("readystatechange", () => {
+    request.addEventListener('readystatechange', () => {
       if (request.readyState === 4 && request.status === 200) {
         const data = JSON.parse(request.responseText);
         resolve(data);
-      } else if (request.readyState === 4) reject("error getting resource");
+      } else if (request.readyState === 4) reject('error getting resource');
     });
 
-    request.open("GET", resource);
+    request.open('GET', resource);
     request.send();
   });
 };
 
 // Chaining Promises
-getTodos("todos/luigi.json")
+getTodos('todos/luigi.json')
   .then(data => {
-    console.log("promise resolved:", data);
-    return getTodos("todos/mario.json");
+    console.log('promise resolved:', data);
+    // Return a promise
+    return getTodos('todos/mario.json');
   })
   .then(data => {
-    console.log("promise 2 resolved:", data);
-    return getTodos("todos/shaun.json");
+    console.log('promise 2 resolved:', data);
+    // Return a promise
+    return getTodos('todos/shaun.json');
   })
   .then(data => {
-    console.log("promise 3 resolved:", data);
+    console.log('promise 3 resolved:', data);
   })
   .catch(err => {
-    console.log("promise rejected:", err);
+    console.log('promise rejected:', err);
   });

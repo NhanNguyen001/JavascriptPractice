@@ -16,7 +16,10 @@ class Circle {
   draw() {
     console.log(Circle.test);
     console.log('draw');
+    console.log(this);
   }
 }
 
 const circle = new Circle(1);
+const draw = circle.draw;
+draw();
